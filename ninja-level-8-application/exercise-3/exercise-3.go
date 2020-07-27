@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 )
 
 type user struct {
@@ -47,8 +49,18 @@ func main() {
 
 	users := []user{u1, u2, u3}
 
-	fmt.Println(users)
+	// Method 1
+	writer := json.NewEncoder(os.Stdout)
+	err := writer.Encode(users)
+	if err != nil {
+		fmt.Println("could not encode to json: ", err)
+	}
 
-	// your code goes here
+	fmt.Printf("\n\n")
 
+	// Method 2
+	err = json.NewEncoder(os.Stdout).Encode(users)
+	if err != nil {
+		fmt.Println("could not encode to json: ", err)
+	}
 }

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/toralfs/golang-basic-course/ninja-level-12-testing-documentation/dog"
+	"github.com/toralfs/golang-basic-course/ninja-level-12-documentation/dog"
 )
 
 type animal struct {
@@ -17,5 +17,4 @@ func main() {
 		age:  dog.Years(6),
 	}
 	fmt.Println(frøya)
-
 }

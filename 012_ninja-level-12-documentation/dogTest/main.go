@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/toralfs/golang-basic-course/ninja-level-12-documentation/dog"
+	"github.com/toralfs/golang-basic-course/012_ninja-level-12-documentation/dog"
 )
 
 type animal struct {
